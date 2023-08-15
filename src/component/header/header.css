@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    justify-content: center;
+    background-color: var(--main);
+    color: var(--detail);
+    text-shadow: 1px 1px 15px black;
+    box-shadow: 1px 1px 15px var(--tertiary);
+    z-index: 99;
+}
+
+.header.mobile-mode{
+    position: relative;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.header.mobile-mode.dark-mode{
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 1px 1px 15px var(--tertiary);
+    color: var(--tertiary);
+}
+
+h1{
+    margin: 0;
+    align-self: center;
+}
+
+.header.mobile-mode h1{
+    font-size: 24px;
+}
+
+@media only screen and (max-width:800px){
+    h1{
+        font-size: 24px;
+    }
+}

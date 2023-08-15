@@ -1,0 +1,20 @@
+.resumeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 4px solid var(--main);
+    width: fit-content;
+    margin: 200px auto auto auto;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.resumeContent.dark-mode{
+    border: 4px solid var(--tertiary);
+    box-shadow: 1px 1px 15px var(--tertiary);
+}
+
+.resumeContent.mobile{
+    margin: 50px auto auto auto;
+}

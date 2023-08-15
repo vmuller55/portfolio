@@ -1,0 +1,20 @@
+
+
+body.dark-mode {
+    background-color: var(--main);
+    color: white;
+}
+
+body.mobile-mode{
+    background-color: inherit;
+}
+
+
+
+.dark-mode-switch {
+    display: flex;
+    align-items: center;
+    right: 30px;
+    top: 30px;
+    position: absolute;
+}

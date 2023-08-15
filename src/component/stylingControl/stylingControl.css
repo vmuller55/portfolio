@@ -1,0 +1,99 @@
+.styling-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 607.61px;
+    margin-top: 100px;
+    padding: 50px;
+    border: 4px solid var(--main);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.input-section{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.selectorInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.textInput{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.textInput input{
+    width: 150px;
+    background-color: var(--main);
+    color: var(--detail);
+    height: 20px;
+}
+
+.textInput input::placeholder{
+    color: var(--detail);
+}
+
+input{
+    
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    background-color: none;
+}
+
+.selector{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.textDirection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.textDirection input{
+    width: 50px;
+}
+
+.styling-controls.dark-mode{
+    border: 4px solid var(--tertiary);
+    box-shadow: 1px 1px 15px var(--tertiary);
+}
+
+.shadowSettings .selector{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.fontSize{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fontSize button{
+    background-color: var(--main);
+    color: var(--detail);
+    border: none;
+    border-radius: 25px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.styling-controls.dark-mode .fontSize button{
+    background-color: var(--detail);
+    color: var(--main);
+}
