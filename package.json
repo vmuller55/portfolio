@@ -11,6 +11,7 @@
     "babel-plugin-macros": "^3.1.0",
     "my-modal-p14": "^0.3.2",
     "react": "^18.2.0",
+    "react-color": "^2.19.3",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.2",
     "react-scripts": "5.0.1",

@@ -20,6 +20,13 @@
     margin: 30px;
   }
 
+  .animationContainer.mobile-mode .animation-buttons button{
+    margin: 10px;
+    width: 40px;
+    font-size: 20px;
+    padding: 5px;
+  }
+
   .animation-buttons button{
     margin: 30px;
     border: none;
@@ -30,6 +37,7 @@
     border-radius: 20px;
     color: var(--detail);
     width: 60px;
+    cursor: pointer;
   }
 
   .animationContainer.dark-mode button{
@@ -37,13 +45,18 @@
     color: var(--main);
   }
 
+  
+
 .animated-text {
     opacity: 1;
     transition: all 1s ease-in-out;
     font-size: 24px;
     font-weight: 600;
   }
-  
+
+  .animationContainer.mobile-mode .animated-text{
+    font-size: 20px;
+  }
   .fade-in {
     animation: fadeIn 1s ease-in-out;
   }

@@ -11,7 +11,7 @@ body.mobile-mode{
 
 
 
-.dark-mode-switch {
+header .dark-mode-switch {
     display: flex;
     align-items: center;
     right: 30px;

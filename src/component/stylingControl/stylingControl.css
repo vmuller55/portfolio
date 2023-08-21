@@ -11,89 +11,178 @@
     text-align: center;
 }
 
+.editableContent:focus{
+    border: none;
+    outline: none;
+}
+
+.styling-controls.mobile-mode .textDirection{
+    margin-bottom: 30px;
+    text-align: center;
+    gap: 10px;
+}
+
 .input-section{
+    margin-top: 50px;
     display: flex;
     justify-content:space-around;
-    flex-direction: row;
-}
-
-.selectorInput{
-    display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.textInput{
-    display: flex;
-    flex-direction: column;
-    
+.selectorInput {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-.textInput input{
-    width: 150px;
+.splitGrid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 40px;
+}
+
+.styling-controls input{
+    margin: 10px;
+}
+
+.range{
+    width: 200px;
+}
+
+.range.color{
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, hsl(0, 100%, 50%) , hsl(50, 100%, 50%) , hsl(100, 100%, 50%) , hsl(150, 100%, 50%) , hsl(200, 100%, 50%) , hsl(250, 100%, 50%) , hsl(300, 100%, 50%), hsl(350, 100%, 50%));
+    cursor: pointer;
+    height: 8px;
+    border-radius: 30px;
+}
+
+.hideGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.shadow{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.colorBorder{
+    grid-row-start: 2;
+}
+
+.toggleInput{
+    width: 40px;
+    height: 20px;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.setBorderWidth{
+    grid-row-start: 2;
+}
+
+.borderRadius{
+    margin-bottom: 30px;
+}
+
+.showCodeButton{
     background-color: var(--main);
     color: var(--detail);
-    height: 20px;
-}
-
-.textInput input::placeholder{
-    color: var(--detail);
-}
-
-input{
-    
-    margin: auto;
-    text-align: center;
-    border-radius: 25px;
     border: none;
-    background-color: none;
+    border-radius: 25px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    margin: 30px auto;
 }
 
-.selector{
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-}
-
-.textDirection{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
+.codeText{
     text-align: left;
+    margin: auto;
+    width: fit-content;
+    background-color: var(--detail);
+    padding: 15px;
+    border-radius: 15px;
 }
 
-.textDirection input{
-    width: 50px;
+.cssCode{
+    position: relative;
+}
+
+.copyButton{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    border: none;
+    background: var(--detail);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.messageFlotant{
+    position: absolute;
+    background-color: var(--main);
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    top: 50%;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 60px;
+    color: white;
+    animation: fadeIn 3s ease;
+}
+
+.styling-controls label{
+    width: 170px;
+    justify-self: end;
 }
 
 .styling-controls.dark-mode{
     border: 4px solid var(--tertiary);
     box-shadow: 1px 1px 15px var(--tertiary);
+    
 }
 
-.shadowSettings .selector{
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
+.coolEffect{
+    background: rgba( 29, 45, 80, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    z-index: 999;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
 }
 
-.fontSize{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-around;
-}
 
-.fontSize button{
-    background-color: var(--main);
-    color: var(--detail);
-    border: none;
-    border-radius: 25px;
-    width: 100px;
-    cursor: pointer;
-    font-size: 16px;
-}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
 
-.styling-controls.dark-mode .fontSize button{
-    background-color: var(--detail);
-    color: var(--main);
-}
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+  }
