@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleMobileMode } from '../../redux/mobileModeSlice';
+import { toggleMobileMode } from '../../../redux/mobileModeSlice';
 import './mobileSlider.css'; 
 
 const MobileSlider = () => {

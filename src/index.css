@@ -1,3 +1,11 @@
+.buttonStyle  {
+    background-color: var(--main);
+    color: var(--detail);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -45,4 +53,86 @@ a{
   color: inherit;
   font-weight: 700;
   cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes fadeOutAndSlide {
+  0% {
+      opacity: 0.5;
+      margin: auto;
+  }
+
+  100% {
+      opacity: 0;
+      transform: translateX(400%);
+      margin: auto;
+      filter: blur(5px);
+  }
+}
+
+@keyframes fadeInAndOut {
+  0% {
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;   
+  }
+}
+
+@keyframes fadeInFromLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-400%);
+      filter: blur(5px);
+  }
+  to {
+      opacity: 1;
+  } 
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInWaves {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 0.7;
+  }
 }

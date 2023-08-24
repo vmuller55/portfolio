@@ -1,0 +1,18 @@
+.slick-track{
+    width: 500px;
+    margin: auto;
+}
+
+.carousselContainer{
+    width: 500px;
+    margin: auto;
+}
+
+.carouselImage{
+    width: 50px;
+}
+
+.carouselImage img{
+    width: 100px;
+    height: 100px;
+}

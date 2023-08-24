@@ -1,5 +1,5 @@
-import DarkModeSwitch from "../../darkMode/DarkModeSwitch"
-import MobileSlider from "../../mobileSlider/mobileSlider"
+import DarkModeSwitch from "../../utils/darkMode/DarkModeSwitch"
+import MobileSlider from "../../utils/mobileSlider/mobileSlider"
 import './darkModeBox.css'
 import { useSelector } from "react-redux"
 

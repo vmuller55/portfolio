@@ -1,0 +1,35 @@
+.codeText{
+    text-align: left;
+    margin: auto;
+    width: fit-content;
+    background-color: var(--detail);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.copyButton{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    border: none;
+    background: var(--detail);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.messageFlotant{
+    position: absolute;
+    background-color: var(--main);
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    top: 50%;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 60px;
+    color: white;
+    animation: fadeInAndOut 3s ease;
+}

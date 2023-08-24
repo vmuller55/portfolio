@@ -9,8 +9,10 @@ const Resume = () => {
         <div className={`resumeContent ${isDarkMode ? 'dark-mode' : ''} ${isMobile ? 'mobile' : ''}`}>
             <h2>Qui je suis?</h2>
             <p>Je me présente, je suis Muller Vincent. Je suis développeur Web spécialisé dans React ! </p>
-            <p>Je suis à la recherche d'une première expérience de travail.</p>
+            <p>Je suis à la recherche d'une première expérience de travail en tant que développeur dans une entreprise.</p>
             <p>Pour commencer, voici mon <a href='https://github.com/vmuller55?tab=repositories'>GitHub</a> avec mes projets en cours</p>
+            <p>Et si on descendait un peu ? </p>
+            <i className="fa-solid fa-arrow-down fa-bounce" style={{textShadow : '0px 0px 5px var(--main)'}}></i>
         </div>
     )
 }

@@ -1,0 +1,136 @@
+.coolEffect{
+    background: rgba( 29, 45, 80, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    z-index: 999;
+    width: 500px;
+    height: 700px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    animation: fadeIn 0.5s linear;
+}
+
+.coolEffectButton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+.coolEffectButton:hover {
+    background-color: var(--detail);
+    color: var(--main);
+}
+
+.wavesContainer{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.wave1, .wave2, .wave3{
+    position: absolute;
+    opacity: 0.7;
+    height: 100%;
+    animation: fadeInWaves 2s linear;
+}
+
+.close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 18px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.close:hover{
+    background-color: var(--detail);
+    color: var(--main);
+}
+
+.content h2{
+    margin-top: 50px;
+}
+
+.effectTable {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -80px;
+    top: 0;
+    margin-top: 90px;
+}
+
+.effectTable button{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.coolEffect .editableContent{
+    transition: all 1s ease-in-out;
+}
+
+.effectTable button:hover, .showCodeButton:hover{
+    background-color: var(--detail);
+    color: var(--main);
+}
+
+.fadeOutAndSlide{
+    opacity: 0;
+    animation: fadeOutAndSlide 0.3s linear;
+}
+
+.fadeIn {
+    animation: fadeInFromLeft 1s cubic-bezier(.57,.21,.69,1.25);
+    width: 80%;
+    margin: auto;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+  
+.slide-in-left {
+    transform: translateX(-100%);
+    opacity: 1;
+}
+  
+.slide-in-right {
+    transform: translateX(100%);
+    opacity: 1;
+}
+  
+.bounce {
+    animation: bounce 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
+.zoom-in {
+    transform: scale(1.2);
+    opacity: 1;
+}
+  
+.rotate {
+    transform: rotate(360deg);
+    opacity: 1;
+}
+
+.wiggle {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+  
+.flip {
+    transform: scaleY(-1);
+    opacity: 1;
+}
+
+
+
+  

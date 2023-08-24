@@ -1,7 +1,7 @@
 import React from 'react';
 import './slidingToggle.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleDarkMode } from '../../redux/darkModeSlice';
+import { toggleDarkMode } from '../../../redux/darkModeSlice';
 
 
 const SlidingToggle = () => {

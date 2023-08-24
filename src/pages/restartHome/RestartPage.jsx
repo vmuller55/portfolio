@@ -1,8 +1,10 @@
+import Restart from "../../component/content/restart/Restart"
+
 const RestartPage = () => {
     return (
         <div className="restartPageContainer">
             <div className="restartPageContent">
-                c'est un big test
+                <Restart/>
             </div>
         </div>
     )

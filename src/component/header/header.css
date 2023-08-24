@@ -11,6 +11,9 @@
     color: var(--detail);
     text-shadow: 1px 1px 15px black;
     box-shadow: 1px 1px 15px var(--tertiary);
+}
+
+.active {
     z-index: 99;
 }
 

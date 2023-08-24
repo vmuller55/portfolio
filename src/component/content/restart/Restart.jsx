@@ -19,9 +19,9 @@ const Restart = () => {
                 <button className="restartButton" onClick={handleToggleClick}>
                     
                     {isReset ? 
-                        ("On revient comme avant ? ")
+                        (<Link to={"/"}>On retourne ou nous étions ? </Link>)
                     :
-                        ("Et si on recommencé d'une autre manière?")
+                        (<Link to={'/restart'}>Et si nous recommention autrement ? </Link>)
                     }
                 </button>
             </div>
