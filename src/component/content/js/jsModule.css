@@ -1,0 +1,66 @@
+.jsModuleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 734.72px;
+    margin-top: 100px;
+    padding: 50px;
+    border: 4px solid var(--main);
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.jsModuleContent{
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+
+.jsModuleCard{
+    background-color: var(--main);
+    color: var(--detail);
+    border-radius: 25px;
+    width: 30%;
+    height: 200px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.jsModuleCard h4{
+    margin: 0px 5px;
+}
+
+.jsModuleCard.active{
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.jsModuleCard.inactive{
+    transform: scale(0.8);
+    filter: blur(5px);
+}
+
+.jsModuleNavigation{
+    z-index: 999;
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jsModuleNavigation button{
+    border: none;
+    border-radius: 50%;
+    background-color: var(--main);
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    color: var(--detail);
+}
