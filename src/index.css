@@ -26,6 +26,8 @@ html{
   --secondary : rgb(19, 59, 92);
   --tertiary : rgb(30, 95, 116);
   --detail : rgb(252, 218, 183);
+  --fill : black;
+  --previousFill : black;
 }
 
 body.mobile-mode{
