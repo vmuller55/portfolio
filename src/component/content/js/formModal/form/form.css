@@ -9,7 +9,6 @@
     width: 30%;
     margin: auto;
     position: relative;
-    z-index: 999;
 }
 
 .formContent input, select{
@@ -20,7 +19,7 @@
     text-align: center;
     background-color: var(--detail);
     color: var(--main);
-    
+    z-index: 999;
 }
 
 .formContent input::placeholder{
@@ -32,7 +31,6 @@
     width: 100%;
     height: 100%;
     top: 0px;
-    
 }
 
 .pngContainer svg{
@@ -57,6 +55,40 @@
 .pngContainer.nature .path{
     animation: fillLow 1s linear;
     --fill : green;  
+}
+
+.formButton {
+    background-color: var(--detail);
+    color: var(--main);
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 50%);
+    transition: all 0.1s linear;
+}
+
+.formButton:hover{
+    box-shadow: 0px 0px 10px var(--detail);
+    width: 250px;
+    height: 35px;
+}
+
+.createdCharacter{
+    color: var(--detail);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 20%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    font-size: 24px;
+}
+
+.changeCharacter{
+    z-index: 1000;
 }
 
 @keyframes fillLow{

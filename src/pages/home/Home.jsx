@@ -7,6 +7,7 @@ import DarkModeBox from "../../component/content/darkModeBox/DarkModeBox"
 import Restart from '../../component/content/restart/Restart.jsx'
 import Footer from "../../component/footer/Footer"
 
+
 import { useSelector } from "react-redux"
 import './home.css'
 
@@ -39,6 +40,7 @@ const Home = () => {
                 <JsModule/>
                 <AppearingComponent breakpoint={1600} direction={'left'} content={<DarkModeBox/>}/>
                 <AppearingComponent breakpoint={1600} direction={'right'} content={<Restart/>}/>
+
             </>
         )}
         <Footer/>

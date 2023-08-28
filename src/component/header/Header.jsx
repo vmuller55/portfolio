@@ -24,7 +24,7 @@ const Header = () => {
     }, [prevScrollPos]);
 
     return (
-        <header style={{ opacity: visible ? 1 : 0}} className={`header ${isDarkMode ? 'dark-mode' : ''} ${isMobile ? 'mobile-mode' : ''} ${visible ? 'active' : ''}`}>
+        <header style={{ opacity: visible ? 1 : 0}} className={`header ${isDarkMode ? 'dark-mode' : ''} ${isMobile ? 'mobile-mode' : ''} ${visible ? 'activeHeader' : ''}`}>
             <MobileSlider/>
             <h1>Muller Vincent</h1>
             <DarkModeSwitch/>

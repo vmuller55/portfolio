@@ -4,6 +4,8 @@ import mobileModeReducer from './mobileModeSlice';
 import restartReducer from './restartSlice';
 import animationModalReducer from './animationModalSlice'
 import styleOptionsReducer from './styleOptionsSlice';
+import characterReducer from './characterSlice'
+import formModalReducer from './formModalSlice';
 
 const store = configureStore({
   reducer: {
@@ -12,6 +14,8 @@ const store = configureStore({
     restart : restartReducer,
     animationModal : animationModalReducer,
     stylingOptions: styleOptionsReducer,
+    character : characterReducer,
+    formModal : formModalReducer,
   },
 });
 

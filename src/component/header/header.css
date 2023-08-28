@@ -13,8 +13,8 @@
     box-shadow: 1px 1px 15px var(--tertiary);
 }
 
-.active {
-    z-index: 99;
+.activeHeader {
+    z-index: 1000;
 }
 
 .header.mobile-mode{

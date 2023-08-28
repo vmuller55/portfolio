@@ -1,22 +1,26 @@
 import React from 'react'
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './jsModule.css'
 import FormModal from './formModal/FormModal';
+import { toggleFormModal } from '../../../redux/formModalSlice';
 
 export const JsModule = () => {
 
-    const [formModalIsVisible, setFormModalIsVisible] = useState(false)
     const [currentSlide, setCurrentSlide] = useState(1);
+    
+    const formModal = useSelector(state => state.formModal)
+    const dispatch = useDispatch()
 
     const handleFormModal = () => {
-      setFormModalIsVisible(!formModalIsVisible)
+      dispatch(toggleFormModal())
     }
 
     const slides = [
         {
           title: 'Un formulaire',
           description: 'Créez des formulaires interactifs avec JavaScript.',
-          exemple: <button onClick={handleFormModal}>Exemple</button>
+          exemple: <button onClick={handleFormModal} className='buttonStyle' style={{backgroundColor : 'var(--detail)', color : 'var(--main)'}}>Exemple</button>
         },
         {
           title: 'Dynamiser du contenu',
@@ -26,7 +30,7 @@ export const JsModule = () => {
         {
           title: 'Connecter une API',
           description: 'Faites des appels à des APIs pour afficher des données en temps réel.',
-          exemple: <button>Exemple</button>
+          exemple: <button className='buttonStyle' style={{backgroundColor : 'var(--detail)', color : 'var(--main)'}}>Exemple</button>
         },
       ];
       const handleSlideCLick = (index) => {
@@ -47,7 +51,7 @@ export const JsModule = () => {
               </div>
             ))}
         </div>
-        {formModalIsVisible && <FormModal button={<button onClick={handleFormModal} className='close buttonStyle' style={{zIndex : "999"}}>X</button>}/>}
+        {formModal && <FormModal button={<button onClick={handleFormModal} className='close buttonStyle' style={{zIndex : "999"}}>X</button>}/>}
     </div>
   )
 }
