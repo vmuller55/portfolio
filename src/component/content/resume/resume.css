@@ -18,3 +18,10 @@
 .resumeContent.mobile{
     margin: 50px auto auto auto;
 }
+
+@media only screen and (max-width : 850px) {
+    .resumeContent{
+        width: 300px;
+        padding: 20px;
+    }
+}

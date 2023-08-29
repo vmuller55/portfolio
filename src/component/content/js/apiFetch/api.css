@@ -1,0 +1,98 @@
+.fetchList{
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
+    padding: 0px;
+    display: grid;
+    text-align: center;
+}
+
+.fetchList li{
+    background-color: var(--detail);
+    padding: 5px 10px;
+    border-radius: 25px;
+    width: 100px;
+    margin: auto;
+}
+
+.fetchList.digimonList li{
+    width: 150px;
+}
+
+.pkmnHeader{
+    text-align: center;
+}
+
+.modalContainer{
+    overflow: scroll;
+}
+
+.modalContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.inputPkmn{
+    text-align: center;
+}
+
+.inputPkmn input{
+    text-align: center;
+}
+
+.imgContainer{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContent{
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px var(--detail);
+}
+
+.modalHeader{
+    text-align: center;
+}
+
+.modalHeader select{
+    height: 30px;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.doggoButton{
+    background-color: var(--detail);
+    color: var(--main);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 50%);
+    width: 150px;
+    height: 40px;
+}
+
+.modalContainer{
+    position: absolute;
+    top: 30px;
+}
+
+.introText{
+    color: var(--detail);
+    margin: 30px;
+    font-size: 24px;
+}
+
+.titleApi{
+    margin: 5px;
+}
+
+.apiContainer h4, .apiContainer label,.apiContainer input{
+    color: var(--detail);
+    background-color: var(--main);
+    border: none;
+}

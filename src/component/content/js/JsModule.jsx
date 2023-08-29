@@ -4,13 +4,20 @@ import { useDispatch, useSelector } from 'react-redux';
 import './jsModule.css'
 import FormModal from './formModal/FormModal';
 import { toggleFormModal } from '../../../redux/formModalSlice';
+import { toggleApiModal } from '../../../redux/apiModal';
+import ApiModal from './apiFetch/api';
 
 export const JsModule = () => {
 
     const [currentSlide, setCurrentSlide] = useState(1);
     
+    const apiModal = useSelector(state => state.apiModal)
     const formModal = useSelector(state => state.formModal)
     const dispatch = useDispatch()
+
+    const handleApiModal = () => {
+      dispatch(toggleApiModal())
+    }
 
     const handleFormModal = () => {
       dispatch(toggleFormModal())
@@ -30,7 +37,7 @@ export const JsModule = () => {
         {
           title: 'Connecter une API',
           description: 'Faites des appels à des APIs pour afficher des données en temps réel.',
-          exemple: <button className='buttonStyle' style={{backgroundColor : 'var(--detail)', color : 'var(--main)'}}>Exemple</button>
+          exemple: <button onClick={handleApiModal} className='buttonStyle' style={{backgroundColor : 'var(--detail)', color : 'var(--main)'}}>Exemple</button>
         },
       ];
       const handleSlideCLick = (index) => {
@@ -52,6 +59,7 @@ export const JsModule = () => {
             ))}
         </div>
         {formModal && <FormModal button={<button onClick={handleFormModal} className='close buttonStyle' style={{zIndex : "999"}}>X</button>}/>}
+        {apiModal && <ApiModal/>}
     </div>
   )
 }

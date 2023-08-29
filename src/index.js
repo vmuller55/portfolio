@@ -9,7 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import Home from './pages/home/Home';
-import RestartPage from './pages/restartHome/RestartPage';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +19,6 @@ root.render(
       <BrowserRouter basename='portfolio'>
         <Routes>
           <Route path='/' index element={<Home/>}/>
-          <Route path='/restart' element={<RestartPage/>}/>
         </Routes>
       </BrowserRouter>
     </Provider>

@@ -116,5 +116,86 @@
 }
 
 
+@media only screen and (max-width : 850px) {
+    .styling-controls{
+        width: 300px;
+        padding: 20px;
+    }
 
+    .splitGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+    }
+
+    .splitGrid label{
+        margin: auto;
+    }
+
+    .offMobile{
+        display: none;
+    }
+
+    .selectorInput{
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    input.range.color{
+        width: 100px;
+        margin: auto;
+    }
+
+    .input-section{
+        margin-top: 20px;
+    }
+
+    .toggleAction .splitGrid{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+        width: fit-content;
+    }
+
+    .toggleAction .splitGrid input{
+        width: 15px;
+    }
+
+    .coolEffectButton{
+        top: 28%;
+    }
+
+    .editableContent{
+        font-size: 18px;
+    }
+
+    .splitGrid.width,.splitGrid.colorBorder,.hideGrid.shadow .splitGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .splitGrid.width input,.splitGrid.colorBorder input, .hideGrid.shadow .splitGrid input{
+        width: 100px;
+        margin: auto;
+    }
+
+    .coolEffect{
+        width: 200px;
+        height: 500px;
+    }
+
+    .coolEffect h2{
+        font-size: 18px;
+    }
+
+    .effectTable{
+        margin-top: 35px;
+        right: -50px;
+    }
+
+    .effectTable button{
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
 
