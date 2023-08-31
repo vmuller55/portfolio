@@ -1,13 +1,5 @@
 
 
-body.dark-mode {
-    background-color: var(--main);
-    color: white;
-}
-
-body.mobile-mode{
-    background-color: inherit;
-}
 
 
 

@@ -102,6 +102,18 @@
     font-size: 16px;
     height: 40px;
     margin: 30px auto;
+    background-color: var(--main);
+    color: var(--detail);
+}
+
+.showCodeButton:hover{
+    background-color: var(--main);
+    color: var(--detail);
+}
+
+.copyButton{
+    background-color: var(--main);
+    color: var(--detail);
 }
 
 .styling-controls label{
@@ -110,11 +122,14 @@
 }
 
 .styling-controls.dark-mode{
-    border: 4px solid var(--tertiary);
-    box-shadow: 1px 1px 15px var(--tertiary);
-    
+    border: 4px solid var(--detail);
+    box-shadow: 0px 0px 15px var(--detail);
 }
 
+.codeText{
+    background-color: var(--main);
+    color: var(--detail);
+}
 
 @media only screen and (max-width : 850px) {
     .styling-controls{
@@ -173,29 +188,23 @@
         grid-template-rows: 1fr 1fr;
     }
 
-    .splitGrid.width input,.splitGrid.colorBorder input, .hideGrid.shadow .splitGrid input{
+    .splitGrid.width input,.splitGrid.colorBorder input, .hideGrid.shadow .splitGrid input, .borderRadius.splitGrid input{
         width: 100px;
         margin: auto;
     }
 
-    .coolEffect{
-        width: 200px;
-        height: 500px;
+    .borderRadius.splitGrid{
+        margin-top: 10px;
     }
 
-    .coolEffect h2{
-        font-size: 18px;
-    }
-
-    .effectTable{
-        margin-top: 35px;
-        right: -50px;
-    }
-
-    .effectTable button{
-        width: 30px;
-        height: 30px;
+    .codeText p{
+        margin: 0px;
         font-size: 16px;
+    }
+
+    .copyButton{
+        top: 20px;
+        right: -10px;
     }
 }
 

@@ -11,8 +11,8 @@
 }
 
 .resumeContent.dark-mode{
-    border: 4px solid var(--tertiary);
-    box-shadow: 1px 1px 15px var(--tertiary);
+    border: 4px solid var(--detail);
+    box-shadow: 1px 1px 15px var(--detail);
 }
 
 .resumeContent.mobile{

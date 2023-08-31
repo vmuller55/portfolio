@@ -6,6 +6,8 @@ import styleOptionsReducer from './styleOptionsSlice';
 import characterReducer from './characterSlice'
 import formModalReducer from './formModalSlice';
 import apiModalReducer from './apiModal'
+import buyModalReducer from './buyModalSlice';
+import cartReducer from './cartSlice';
 
 const store = configureStore({
   reducer: {
@@ -15,7 +17,9 @@ const store = configureStore({
     stylingOptions: styleOptionsReducer,
     character : characterReducer,
     formModal : formModalReducer,
-    apiModal : apiModalReducer
+    apiModal : apiModalReducer,
+    buyModal : buyModalReducer,
+    cart : cartReducer,
   },
 });
 

@@ -11,6 +11,7 @@ export const JsModule = () => {
 
     const [currentSlide, setCurrentSlide] = useState(1);
     
+    const isDarkMode = useSelector(state => state.darkMode)
     const apiModal = useSelector(state => state.apiModal)
     const formModal = useSelector(state => state.formModal)
     const dispatch = useDispatch()
@@ -27,7 +28,7 @@ export const JsModule = () => {
         {
           title: 'Un formulaire',
           description: 'Créez des formulaires interactifs avec JavaScript.',
-          exemple: <button onClick={handleFormModal} className='buttonStyle' style={{backgroundColor : 'var(--detail)', color : 'var(--main)'}}>Exemple</button>
+          exemple: <button onClick={handleFormModal} className='buttonStyle jsButton' style={{backgroundColor : 'var(--detail)', color : 'var(--main)'}}>Exemple</button>
         },
         {
           title: 'Dynamiser du contenu',
@@ -37,7 +38,7 @@ export const JsModule = () => {
         {
           title: 'Connecter une API',
           description: 'Faites des appels à des APIs pour afficher des données en temps réel.',
-          exemple: <button onClick={handleApiModal} className='buttonStyle' style={{backgroundColor : 'var(--detail)', color : 'var(--main)'}}>Exemple</button>
+          exemple: <button onClick={handleApiModal} className='buttonStyle jsButton' style={{backgroundColor : 'var(--detail)', color : 'var(--main)'}}>Exemple</button>
         },
       ];
       const handleSlideCLick = (index) => {
@@ -45,10 +46,10 @@ export const JsModule = () => {
       }
 
   return (
-    <div className="jsModuleContainer">
+    <div className={`jsModuleContainer ${isDarkMode ? 'dark-mode' : ''}`}>
         <h3>Puis vient le tour de JavaScript ! </h3>
         <h4>On peut faire plusieurs choses avec JavaScript, à commencer par ça :</h4>
-        <i className="fa-solid fa-arrow-down fa-bounce"></i>
+        <i className="fa-regular fa-hand-point-down fa-beat"></i>
         <div className="jsModuleContent">
             {slides.map((item, index) => (
               <div key={index} className={`jsModuleCard ${currentSlide === index ? 'active' : 'inactive'}`} onClick={() => handleSlideCLick(index)} >

@@ -1,6 +1,6 @@
 .coolEffect{
     background: rgba( 29, 45, 80, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 10.5px );
     border-radius: 10px;
@@ -46,7 +46,7 @@
     right: 15px;
     top: 15px;
     font-size: 18px;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px var(--detail);
 }
 
 .close:hover{
@@ -89,7 +89,7 @@
 }
 
 .fadeIn {
-    animation: fadeInFromLeft 1s cubic-bezier(.57,.21,.69,1.25);
+    animation: fadeInFromLeft 0.4s cubic-bezier(.57,.21,.69,1.25);
     width: 80%;
     margin: auto;
 }

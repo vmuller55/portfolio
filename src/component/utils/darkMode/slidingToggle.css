@@ -1,21 +1,19 @@
 .sliding-toggle {
     width: 60px;
     height: 30px;
-    background-color: var(--detail);
+    background-color: var(--main);
     border-radius: 15px;
     position: relative;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
-  .sliding-toggle.dark-mode {
-    background-color: var(--tertiary);
-  }
+  
   
   .slider {
     width: 24px;
     height: 24px;
-    background-color: var(--main);
+    background-color: var(--detail);
     border-radius: 50%;
     position: absolute;
     top: 3px;
@@ -28,9 +26,10 @@
   
   .sliding-toggle.dark-mode .slider {
     transform: translateX(30px);
+    background-color: var(--detail);
   }
   .slider svg {
-    fill: var(--detail);
+    fill: var(--main);
     transition: transform 0.5s ease;
 }
 

@@ -49,7 +49,7 @@ const StylingControls = () => {
         )
       :
         (
-          <button onClick={handleOpenModal} className='buttonStyle coolEffectButton bounce'>
+          <button onClick={handleOpenModal} className='buttonStyle coolEffectButton bounce offMobile'>
             <i className="fa-solid fa-fire fa-beat"></i>
           </button>
         )

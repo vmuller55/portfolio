@@ -12,7 +12,7 @@ const Resume = () => {
             <p>Je suis à la recherche d'une première expérience de travail en tant que développeur dans une entreprise.</p>
             <p>Pour commencer, voici mon <a href='https://github.com/vmuller55?tab=repositories'>GitHub</a> avec mes projets en cours</p>
             <p>Et si on descendait un peu ? </p>
-            <i className="fa-solid fa-arrow-down fa-bounce" style={{textShadow : '0px 0px 5px var(--main)'}}></i>
+            <i className="fa-solid fa-arrow-down fa-bounce"></i>
         </div>
     )
 }

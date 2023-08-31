@@ -4,29 +4,22 @@
     justify-content: center;
     text-align: center;
     border: 4px solid var(--main);
-    width: fit-content;
     margin: 100px auto auto auto;
     padding: 50px;
     border-radius: 25px;
     text-align: center;
-    max-width: 607.61px;
     gap: 30px;
+    width: 734.72px;
 }
 
 .darkModeBoxContainer.dark-mode{
-    border: 4px solid var(--tertiary);
-    box-shadow: 1px 1px 15px var(--tertiary);
+    border: 4px solid var(--detail);
+    box-shadow: 0px 0px 10px var(--detail);
 }
 
-.darkBoxText {
-    text-align: center;
-    margin-bottom: 50px;
+.darkModeBoxContainer h4{
     font-size: 24px;
-    word-wrap: break-word;
-}
-
-.darkModeBoxContainer.mobile-mode .darkBoxText {
-    font-size: 20px;
+    margin-bottom: 0px;
 }
 
 .dark-mode-switch{
@@ -38,4 +31,11 @@
     left: inherit;
     top: inherit;
     margin: auto;
+}
+
+@media only screen and (max-width : 850px) {
+    .darkModeBoxContainer{
+        width: 300px;
+        padding: 20px;
+    }
 }
