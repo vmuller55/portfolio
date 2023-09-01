@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.03776aa7.css",
-    "main.js": "/portfolio/static/js/main.3a2c55a1.js",
+    "main.css": "/portfolio/static/css/main.64093c76.css",
+    "main.js": "/portfolio/static/js/main.a37b6f2f.js",
+    "static/media/castle.gif": "/portfolio/static/media/castle.0230447bb33870fb5c4c.gif",
     "static/media/cim.gif": "/portfolio/static/media/cim.416a46bb5979ca136641.gif",
+    "static/media/caves.gif": "/portfolio/static/media/caves.e12c5c4c03f9c267139c.gif",
     "static/media/trueSkeleton.svg": "/portfolio/static/media/trueSkeleton.3ed0cefbf98fb7b59d95d0c0843e5385.svg",
+    "static/media/dragon.svg": "/portfolio/static/media/dragon.6d1b2a5119fb32d5d123373f39984f8d.svg",
     "static/media/gameOver.gif": "/portfolio/static/media/gameOver.7ce6629b80bae73a5803.gif",
+    "static/media/gold.gif": "/portfolio/static/media/gold.30d4151814b00c9541ec.gif",
     "static/media/warrior.svg": "/portfolio/static/media/warrior.dd934bdeea0f7adfb86352f2064c3f36.svg",
+    "static/media/zombie.svg": "/portfolio/static/media/zombie.946f831341285377f85a7d532ba49e8a.svg",
     "static/media/wizard.svg": "/portfolio/static/media/wizard.0eed20944b2c515d0c2bb74777c32dcf.svg",
     "static/media/thief.svg": "/portfolio/static/media/thief.604c5a4cd3fdee55f88d483da84651a7.svg",
     "index.html": "/portfolio/index.html",
-    "main.03776aa7.css.map": "/portfolio/static/css/main.03776aa7.css.map",
-    "main.3a2c55a1.js.map": "/portfolio/static/js/main.3a2c55a1.js.map"
+    "main.64093c76.css.map": "/portfolio/static/css/main.64093c76.css.map",
+    "main.a37b6f2f.js.map": "/portfolio/static/js/main.a37b6f2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.03776aa7.css",
-    "static/js/main.3a2c55a1.js"
+    "static/css/main.64093c76.css",
+    "static/js/main.a37b6f2f.js"
   ]
 }
