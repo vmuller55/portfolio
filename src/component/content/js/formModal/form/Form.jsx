@@ -85,7 +85,7 @@ const Form = () => {
                         <h4 className='createdCharacter changeCharacter'>
                             Vous jouez {formInfos.lastName} {formInfos.firstName} un {formInfos.classSelected}. <br/>
                             Vous utilisez {formInfos.colorSelected === "feu" ? "le feu" : formInfos.colorSelected === "eau" ? "l'eau" : "la nature" } pour vous battre ! <br/>
-                            On se retouvera un peu plus bas !
+                            Nous retrouverons notre personnage un peu plus bas !
                         </h4>
                         <button className='buttonStyle formButton changeCharacter' style={{bottom : '100px'}} onClick={handleChangeCharacter}>Changer de personnage</button>
                         <div className={pngContainerClass}>
@@ -105,7 +105,7 @@ const Form = () => {
                 (
                     <div className="formContainer">
                     <h2>Formulaire</h2>
-                    <h3>Créons un personage de jeu de rôle</h3>
+                    <h3>Créons un personnage de jeu de rôle :</h3>
                     <div className="formContent">
                         <input type="text" id='firstName' placeholder='Prénom *' value={formInfos.firstName} maxLength={8} onChange={event => handleChangeInfos('firstName', event.target.value)}/>
                         <input type="text" id='lastName' placeholder='Nom *' value={formInfos.lastName} maxLength={8} onChange={event => handleChangeInfos('lastName', event.target.value)}/>

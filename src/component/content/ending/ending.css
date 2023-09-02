@@ -1,0 +1,98 @@
+.endingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 4px solid var(--main);
+    width: 734.72px;
+    margin: 200px auto auto auto;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.pdfButton{
+    background-color: var(--main);
+    border: none;
+    padding: 15px;
+    color: var(--detail);
+    font-size: 20px;
+    border-radius: 25px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.skillList{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill i{
+    font-size: 50px;
+    color: var(--main);
+    
+}
+
+.skill:hover{
+    scale: 1.5;
+    
+}
+
+.coolLink{
+    color: var(--main);
+    transition: all 0.3s ease-in-out;
+}
+
+.coolLink:hover{
+    
+    text-shadow: 0px 0px 10px var(--main);
+}
+
+.endingContainer.dark-mode{
+    border: 4px solid var(--detail);
+    box-shadow: 1px 1px 15px var(--detail);
+}
+
+.skillInfo h3{
+    font-weight: 400;
+}
+
+@media only screen and (max-width : 850px) {
+    .endingContainer{
+        width: 300px;
+        padding: 20px;
+    }
+    .endingContent{
+        width: 90%;
+        margin: auto;
+    }
+
+    .skillList{
+        margin-top: 80px;
+        width: 100%;
+    }
+    .skill{
+        height: 100px;
+        width: 70px;
+        position: relative;
+    }
+
+    .skill i{
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        right: -50%;
+        transform: translate(-50%);
+    }
+}

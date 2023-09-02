@@ -1,9 +1,11 @@
 import './footer.css'
-
+import {  useSelector } from 'react-redux'
 const Footer = () => {
+
+    const isDark = useSelector(state => state.darkMode)
     return(
         <footer>
-            <div className="blocColor"></div>
+            <div className={`footerBloc ${isDark ? 'dark-mode' : ''}`}></div>
         </footer>
     )
 }

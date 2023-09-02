@@ -27,6 +27,6 @@ const initialState = {
     },
   });
   
-  export const { updateCharacter, addToInventory, clearInventory } = characterSlice.actions;
+  export const { updateCharacter, addToInventory, clearInventory, removeFromInventory } = characterSlice.actions;
   
   export default characterSlice.reducer;

@@ -9,9 +9,9 @@ const Resume = () => {
         <div className={`resumeContent ${isDarkMode ? 'dark-mode' : ''} ${isMobile ? 'mobile' : ''}`}>
             <h2>Qui je suis?</h2>
             <p>Je me présente, je suis Muller Vincent. Je suis développeur Web spécialisé dans React ! </p>
-            <p>Je suis à la recherche d'une première expérience de travail en tant que développeur dans une entreprise.</p>
-            <p>Pour commencer, voici mon <a href='https://github.com/vmuller55?tab=repositories'>GitHub</a> avec mes projets en cours</p>
-            <p>Et si on descendait un peu ? </p>
+            <p>Pour commencer, voici mon <a href='https://github.com/vmuller55?tab=repositories'><span className='coolLink'>GitHub</span></a> avec mes projets en cours</p>
+            <p>Vous retrouvez ici quelques exemples interactifs possibles avec React, dont un mini jeu à la fin !</p>
+            <p>Descendons un peu pour commencer.</p>
             <i className="fa-solid fa-arrow-down fa-bounce"></i>
         </div>
     )

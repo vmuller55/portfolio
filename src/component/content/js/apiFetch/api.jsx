@@ -22,17 +22,12 @@ function ApiModal() {
         fetchRandomDogImage();
         const updateResolution = () => {
             setResolution({ width: window.innerWidth, height: window.innerHeight });
-          };
-      
-          // Mettre à jour la résolution lorsque la fenêtre est redimensionnée
-          window.addEventListener('resize', updateResolution);
-      
-          // Appeler la fonction de mise à jour une fois au montage initial
-          updateResolution();
-          // Nettoyer l'écouteur d'événement lorsque le composant est démonté
-          return () => {
+        };
+        window.addEventListener('resize', updateResolution);
+        updateResolution();
+        return () => {
             window.removeEventListener('resize', updateResolution);
-          };
+        };
           
     }, []);
 
@@ -111,10 +106,10 @@ function ApiModal() {
                 ?
                     <>
                         <div className="inputPkmn">
-                            <h4 className='titleApi'>Ici l'api nous fournit une liste de pokemon</h4>
-                            <h4 className='offMobile'>On peut utiliser css grid pour changer l'affichage de notre liste</h4>
+                            <h4 className='titleApi'>Ici, l'API nous fournit une liste de Pokemon.</h4>
+                            <h4 className='offMobile'>On peut utiliser css grid pour changer l'affichage de notre liste :</h4>
                             <label className='offMobile'>Changer le nombre de colonnes : </label>
-                            <input type='number' value={colonm} onChange={event => handleSetColomn(event.target.value)} min={1} max={5} placeholder='Nombre de colonnes' className='offMobile' ></input>
+                            <input type='number' value={colonm > 5 ? setColomn(5) : colonm <= 0 ? setColomn(1) : colonm} onChange={event => handleSetColomn(event.target.value)} min={1} max={5} placeholder='Nombre de colonnes' className='offMobile' ></input>
                         </div>
                         {
                             resolution.width > 850 
@@ -138,10 +133,10 @@ function ApiModal() {
                 fetchList === 'digimon' ?
                     <>
                         <div className="inputPkmn">
-                            <h4 className='titleApi'>Ici l'api nous fournit une liste de digimon</h4>
-                            <h4 className='offMobile'>On peut utiliser css grid pour changer l'affichage de notre liste</h4>
+                            <h4 className='titleApi'>Ici l'api nous fournit une liste de Digimon.</h4>
+                            <h4 className='offMobile'>On peut utiliser css grid pour changer l'affichage de notre liste :</h4>
                             <label className='offMobile'>Changer le nombre de colonnes : </label>
-                            <input type='number' value={colonm > 3 ? setColomn(3) : colonm} onChange={event => handleSetColomn(event.target.value)} min={1} max={3} placeholder='Nombre de colonnes' className='offMobile'></input>
+                            <input type='number' value={colonm > 3 ? setColomn(3) : colonm <= 0 ? setColomn(1) : colonm} onChange={event => handleSetColomn(event.target.value)} min={1} max={3} placeholder='Nombre de colonnes' className='offMobile'></input>
                         </div>
                         {
                             resolution.width > 850
@@ -163,7 +158,7 @@ function ApiModal() {
                 :
                 fetchList === 'dogo' ?
                     <>
-                        <h4 className='titleApi'>Ici l'api nous fournit une image aléaoire de chiens</h4>
+                        <h4 className='titleApi'>Ici, l'API nous fournit une image alétaoire de chiens.</h4>
                         <div className="imgContainer">
                             <img src={randomDogo} alt='chien' className='imgContent'/>
                         </div>
@@ -172,8 +167,8 @@ function ApiModal() {
                     </>
                 :
                     <div className='introText'>
-                        <h4>Avec les api nous pouvons connecter notre application a des services externes et en récuperer les informations.</h4>
-                        <h4>Voici plusieurs exemple d'utilisation d'api</h4>
+                        <h4>Avec les API, nous pouvons connecter notre application à des services externes et en récupérer les informations.</h4>
+                        <h4>Voici plusieurs exemples d'utilisation d'api</h4>
                     </div>
             }
             />

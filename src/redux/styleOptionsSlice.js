@@ -13,7 +13,7 @@ const initialState = {
     shadowY: 1,
     shadowBlur: 10,
     shadowColor: 0,
-    editableContent: "J'ai commencé par apprendre le HTML, le CSS et les animations",
+    editableContent: "J'ai commencé par apprendre le HTML, le CSS et les animations.",
     showCode: false,
   };
   

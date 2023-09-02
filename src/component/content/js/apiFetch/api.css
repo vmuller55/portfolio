@@ -102,6 +102,12 @@
     border: none;
 }
 
+.apiContainer input{
+    border: 1px solid var(--detail);
+    border-radius: 24px;
+    text-align: center;
+}
+
 @media only screen and (max-width : 850px ) {
     .modalHeader select{
         margin-top: 50px;

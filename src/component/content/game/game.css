@@ -1,0 +1,367 @@
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 4px solid var(--main);
+    margin: 100px auto auto auto;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    gap: 30px;
+    width: 734.72px;
+}
+
+.gameScreen{
+    border: 4px solid var(--main);
+    border-radius: 25px;
+    height: 400px;
+    background-image: url('../../../assets/images/cim.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    top: 30px;
+    font-size: 24px;
+    width: 90%;
+    color: var(--detail);
+    text-shadow: 0px 0px 10px black;
+}
+
+.cave{
+    background-image: url('../../../assets/images/caves.gif');
+}
+
+.castle{
+    background-image: url('../../../assets/images/castle.gif');
+}
+
+.goldContainer{
+    background-image: url('../../../assets/images/gold.gif');
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 50%;
+}
+
+.gameButton{
+    border: none;
+    background-color: inherit;
+    width: fit-content;
+    padding: 0px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.startGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.startGame h3{
+    margin: 0px;
+    background-color: var(--main);
+    color: var(--detail);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.retry{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: none;
+    background-color: var(--main);
+    color: var(--detail);
+    padding: 5px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.gameOn{
+    animation: textUp 15s linear;
+    font-size: 24px;
+    width: 90%;
+    color: var(--detail);
+    text-shadow: 0px 0px 10px black;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.choices.actions{
+    gap: 20px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.choice button{
+    background-color: var(--main);
+    border: none;
+    color: var(--detail);
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.skipButton{
+    border: none;
+    background-color: var(--main);
+    color: var(--detail);
+    padding: 10px;
+    border-radius: 25px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.gameOver{
+    background-image: url('../../../assets/images/gameOver.gif');
+}
+
+.mySide{
+    position: absolute;
+    bottom: -200px;
+    left: -50px;
+    width: fit-content;
+}
+
+.mySide svg{
+    width: 450px;
+    height: 450px;
+}
+
+.ennemiSide{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.ennemiSide svg{
+    width: 250px;
+    height: 200px;
+}
+
+.lifeBar {
+    height: 5px;
+    position: absolute;
+    top: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 25px;
+    background: red;
+    transition: all 1s ease-in-out;
+}
+
+.lifeBar::-webkit-slider-thumb{
+    appearance: none;
+}
+
+.continueButton{
+    position: absolute;
+    background-color: var(--main);
+    color: var(--detail);
+    border: none;
+    padding: 5px 10px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.fadeOutEnnemies{
+    opacity: 0;
+    animation: fadeOutEnnemies 1s linear;
+    display: none;
+}
+
+.gameText{
+    font-size: 24px;
+    width: 90%;
+    color: var(--detail);
+    text-shadow: 0px 0px 10px black;
+}
+
+.flotingFightMessage{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    top: 20%;
+}
+
+.flotingFightMessage p  {
+    margin: 0px;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.off{
+    display: none;
+}
+
+.myAction h3{
+    color: var(--detail);
+    padding: 15px;
+    font-weight: 400;
+}
+
+.itemListChoice{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+    background-color: var(--main);
+    padding: 30px 30px;
+    border-radius: 50px;
+    z-index: 1001;
+}
+
+
+.itemButton:hover{
+    background-image: linear-gradient(to top, #ec008c, #fc6767);
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text;
+    color: transparent;
+}
+
+.coolText{
+    background-image: linear-gradient(to top, #ec008c, #fc6767);
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 10px #ec008c;
+}
+
+.itemButton{
+    color: var(--detail);
+    border: 2px solid var(--detail);
+    padding: 15px;
+    box-shadow: 0px 0px 10px var(--detail);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: inherit;
+}
+
+.gameContainer.dark-mode{
+    border: 4px solid var(--detail);
+    box-shadow: 1px 1px 15px var(--detail);
+}
+
+@keyframes fadeOutEnnemies{
+    from{
+        display: block;
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes textUp {
+    from{
+        transform: translateY(120%);
+    }
+    to{
+        transform: translateY(-150%);
+    }
+}
+
+@media only screen and (max-width : 850px){
+    .gameContainer{
+        width: 300px;
+        padding: 20px;
+    }
+
+    .gameScreen{
+        height: 650px;
+    }
+
+    .gameButton{
+        width: 200px;
+    }
+
+    .startGame{
+        width: 80%;
+        margin: auto;
+    }
+
+    .startGame h3{
+        height: max-content;
+    }
+
+    .choices {
+        gap: 30px;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .choice button{
+        width: 200px;
+    }
+
+    .retry{
+        top: 40px;
+        z-index: 1500;
+    }
+
+    .gameOver{
+        background-size: 120%;
+        background-color: grey;
+    }
+
+    .lifeBar{
+        scale: 0.4;
+    }
+
+    .goldContainer{
+        background-position: 100% 100%;
+    }
+
+    .end{
+        top: 50px;
+    }
+
+    .continueButton{
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%);
+        width: 200px;
+    }
+
+    .itemListChoice{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
